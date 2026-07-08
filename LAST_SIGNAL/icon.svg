@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="20" fill="#0a0e14"/>
+  <rect width="128" height="128" rx="20" fill="none" stroke="#16324a" stroke-width="2"/>
+  <!-- signal waves -->
+  <g fill="none" stroke="#33e1c8" stroke-width="4" stroke-linecap="round" opacity="0.9">
+    <path d="M46 44 A26 26 0 0 0 46 84"/>
+    <path d="M82 44 A26 26 0 0 1 82 84"/>
+    <path d="M36 34 A40 40 0 0 0 36 94" opacity="0.5"/>
+    <path d="M92 34 A40 40 0 0 1 92 94" opacity="0.5"/>
+  </g>
+  <!-- tower mast -->
+  <path d="M64 40 L74 100 L54 100 Z" fill="#c8d6e5"/>
+  <line x1="59" y1="70" x2="69" y2="70" stroke="#0a0e14" stroke-width="3"/>
+  <line x1="57" y1="85" x2="71" y2="85" stroke="#0a0e14" stroke-width="3"/>
+  <!-- core beacon -->
+  <circle cx="64" cy="40" r="9" fill="#ff5a3c"/>
+  <circle cx="64" cy="40" r="4" fill="#ffd27f"/>
+</svg>

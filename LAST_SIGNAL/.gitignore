@@ -1,0 +1,24 @@
+# Godot 4 editor & import cache
+.godot/
+.import/
+*.import.tmp
+
+# Exported builds
+/export/
+/build/
+/builds/
+*.exe
+*.pck
+*.zip
+*.apk
+*.aab
+
+# Generated audio — reproduce with: python3 tools/generate_audio.py
+audio/music/*.wav
+audio/sfx/*.wav
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~

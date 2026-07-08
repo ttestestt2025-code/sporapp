@@ -1,0 +1,62 @@
+; Engine configuration file — LAST SIGNAL
+; Godot 4.3+ project. Open with the Godot editor to import assets and export.
+
+config_version=5
+
+[application]
+
+config/name="LAST SIGNAL"
+config/description="A post-apocalyptic 2D arcade survivor / bullet-heaven roguelite. Defend humanity's last communication station."
+run/main_scene="res://scenes/main/Main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.03, 0.04, 0.05, 1)
+boot_splash/show_image=false
+
+[autoload]
+
+Events="*res://scripts/autoload/Events.gd"
+GameData="*res://scripts/autoload/GameData.gd"
+SaveSystem="*res://scripts/autoload/SaveSystem.gd"
+AudioManager="*res://scripts/autoload/AudioManager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[physics]
+
+common/physics_ticks_per_second=60
+2d/default_gravity=0.0
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="enemies"
+2d_physics/layer_3="player_hurtbox"
+2d_physics/layer_4="enemy_hurtbox"
+2d_physics/layer_5="pickups"
+2d_physics/layer_6="world"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.03, 0.04, 0.055, 1)
+2d/snap/snap_2d_transforms_to_pixel=true
+
+[debug]
+
+gdscript/warnings/treat_warnings_as_errors=false
+gdscript/warnings/untyped_declaration=0
+gdscript/warnings/inference_on_variant=0
+gdscript/warnings/unsafe_property_access=0
+gdscript/warnings/unsafe_method_access=0
+gdscript/warnings/unsafe_cast=0
+gdscript/warnings/unsafe_call_argument=0
+gdscript/warnings/native_method_override=0
