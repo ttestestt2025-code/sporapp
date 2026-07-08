@@ -17,6 +17,12 @@
 audio/music/*.wav
 audio/sfx/*.wav
 
+# Image assets — materialize with: python3 tools/decode_assets.py
+assets/sprites/player/*.png
+assets/sprites/enemies/*.png
+assets/branding/*.png
+marketing/screenshots/*.png
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

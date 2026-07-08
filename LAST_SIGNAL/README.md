@@ -4,7 +4,12 @@
 
 **Engine:** Godot 4.3+ · **Language:** GDScript (typed) · **Renderer:** GL Compatibility (web + low-end friendly)
 
-![Key Art](assets/branding/key_art.png)
+> **First-time setup:** image assets and audio are stored as generators/base64 (the delivery pipeline couldn't push raw binaries). Run once, from the project root:
+> ```bash
+> python3 tools/decode_assets.py     # writes the pixel-art PNGs
+> python3 tools/generate_audio.py    # synthesizes music + SFX  (needs: pip install numpy)
+> ```
+> The game still runs without them (shape fallbacks + silent). Full-res key art & logo are in the project archive.
 
 ---
 
@@ -40,7 +45,7 @@ This repository **is** the Godot project (the repo root contains `project.godot`
 
 ### Play in the editor
 1. Install **Godot 4.3+** (standard build) from <https://godotengine.org>.
-2. *(Optional, for sound)* generate the procedural audio: `python3 tools/generate_audio.py` (needs numpy). Audio is git-ignored as a generated asset; the game runs silent without it.
+2. Materialize assets (see First-time setup above): `python3 tools/decode_assets.py && python3 tools/generate_audio.py`.
 3. Open the Godot Project Manager → **Import** → select this repo's `project.godot`.
 4. First open auto-imports assets. Press **F5** (Play) to run.
 

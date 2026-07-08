@@ -34,6 +34,9 @@ jobs:
             cp -r /root/.local/share/godot/export_templates/4.3.stable/* ~/.local/share/godot/export_templates/4.3.stable/ || true
           fi
 
+      - name: Materialize image assets (base64 -> PNG)
+        run: python3 tools/decode_assets.py
+
       - name: Generate audio (procedural, not committed)
         run: |
           apt-get update && apt-get install -y python3-numpy
